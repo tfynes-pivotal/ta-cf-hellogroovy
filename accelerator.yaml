@@ -1,7 +1,7 @@
 accelerator:
   displayName: TAS Groovy Hello World
   description: hello world groovy app for Cloud Foundry
-  iconUrl: https://raw.githubusercontent.com/simple-starters/icons/master/icon-tanzu-light.png
+  iconUrl: https://github.com/tfynes-pivotal/ta-cf-hellogroovy/blob/main/cloud-foundry-icon.png
   tags: []
   options:
   - name: optionName
