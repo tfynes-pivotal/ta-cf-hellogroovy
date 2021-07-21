@@ -8,6 +8,14 @@ accelerator:
     label: Nice Label
     display: true
     defaultValue: ""
+
+  - name: appName
+    display: true
+    defaultValue: hello-groovy
 engine:
   include:
   - '**'
+  type: ReplaceText
+  substitutions:
+  - text: hellogroovy
+    with: "#appName"
