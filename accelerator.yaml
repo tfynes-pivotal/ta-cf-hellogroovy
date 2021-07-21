@@ -1,7 +1,7 @@
 accelerator:
   displayName: TAS Groovy Hello World
   description: hello world groovy app for Cloud Foundry
-  iconUrl: https://github.com/tfynes-pivotal/ta-cf-hellogroovy/blob/main/cloud-foundry-icon.png
+  iconUrl: https://github.com/tfynes-pivotal/ta-cf-hellogroovy/blob/main/cloud-foundry-icon.png?raw=true
   tags: []
   options:
   - name: optionName
@@ -15,7 +15,9 @@ accelerator:
 engine:
   include:
   - '**'
-  type: ReplaceText
-  substitutions:
-  - text: hellogroovy
-    with: "#appName"
+  
+  chain:
+    - type: ReplaceText
+      substitutions:
+      - text: hellogroovy
+        with: "#appName"
